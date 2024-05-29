@@ -1,0 +1,5 @@
+C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Configuracion\obj\Debug\net8.0\LibreriaAPI_Configuracion.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Configuracion\obj\Debug\net8.0\LibreriaAPI_Configuracion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Configuracion\obj\Debug\net8.0\LibreriaAPI_Configuracion.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Configuracion\obj\Debug\net8.0\LibreriaAPI_Configuracion.AssemblyInfo.cs
+C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Configuracion\obj\Debug\net8.0\LibreriaAPI_Configuracion.csproj.CoreCompileInputs.cache

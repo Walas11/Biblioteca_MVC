@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaMVC", "LibreriaMVC\LibreriaMVC.csproj", "{0F3E4E0D-C188-4828-A8AA-77951AAE509A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructura", "Infraestructura", "{72466CA0-3648-442F-B83B-F70BE74D094B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaAPI_Infraestructura", "LibreriaAPI_Infraestructura\LibreriaAPI_Infraestructura.csproj", "{9CB1C570-A483-4ECA-BF15-B395C729008B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F3E4E0D-C188-4828-A8AA-77951AAE509A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3E4E0D-C188-4828-A8AA-77951AAE509A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3E4E0D-C188-4828-A8AA-77951AAE509A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3E4E0D-C188-4828-A8AA-77951AAE509A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB1C570-A483-4ECA-BF15-B395C729008B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB1C570-A483-4ECA-BF15-B395C729008B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB1C570-A483-4ECA-BF15-B395C729008B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB1C570-A483-4ECA-BF15-B395C729008B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9CB1C570-A483-4ECA-BF15-B395C729008B} = {72466CA0-3648-442F-B83B-F70BE74D094B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64772073-C619-4194-98F0-C9A71EC921B8}
+	EndGlobalSection
+EndGlobal
