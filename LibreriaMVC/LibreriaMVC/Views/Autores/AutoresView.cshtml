@@ -45,12 +45,17 @@
 <body>
     <div class="container">
         <h1>Lista de Autores</h1>
+
+        <a asp-action="AutoresCreate" class="btn btn-primary btn-lg">Nuevo Autor</a>
+
         <table>
             <thead>
                 <tr>
                     <th>Código del Autor</th>
                     <th>Nombre del Autor</th>
                     <th>Nacionalidad</th>
+                    <th> </th>
+                    <th> </th>
                 </tr>
             </thead>
             <tbody>
@@ -60,10 +65,14 @@
                         <td>@autor.Codigo_autor</td>
                         <td>@autor.Nombre_autor</td>
                         <td>@autor.Nacionalidad</td>
+                        <td> <a asp-action="AutoresEdit" asp-route-codigo="@autor.Codigo_autor">Editar</a> </td>
+                        <td> <a asp-action="AutoresDeleteView" asp-route-codigo="@autor.Codigo_autor">Eliminar</a> </td>
                     </tr>
                 }
+                
             </tbody>
         </table>
     </div>
+
 </body>
 </html>

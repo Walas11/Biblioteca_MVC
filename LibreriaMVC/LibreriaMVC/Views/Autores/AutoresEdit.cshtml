@@ -1,0 +1,19 @@
+﻿@model LibreriaAPI_Infraestructura.DataBase.Entities.Autores.AutoresEntities
+
+<h2>Editar Autor</h2>
+
+<form asp-action="Edit">
+    <div class="form-group">
+        <label for="Codigo_autor">Código de Autor:</label>
+        <input type="text" class="form-control" id="Codigo_autor" name="Codigo_autor" value="@Model.Codigo_autor" readonly />
+    </div>
+    <div class="form-group">
+        <label for="Nombre_autor">Nombre:</label>
+        <input type="text" class="form-control" id="Nombre_autor" name="Nombre_autor" value="@Model.Nombre_autor" required />
+    </div>
+    <div class="form-group">
+        <label for="Nacionalidad">Nacionalidad:</label>
+        <input type="text" class="form-control" id="Nacionalidad" name="Nacionalidad" value="@Model.Nacionalidad" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+</form>
