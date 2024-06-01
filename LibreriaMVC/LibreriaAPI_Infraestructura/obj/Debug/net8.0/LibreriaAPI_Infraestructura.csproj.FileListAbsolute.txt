@@ -7,6 +7,7 @@ C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC
 C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Infraestructura\obj\Debug\net8.0\LibreriaAPI_Infraestructura.AssemblyInfoInputs.cache
 C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Infraestructura\obj\Debug\net8.0\LibreriaAPI_Infraestructura.AssemblyInfo.cs
 C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Infraestructura\obj\Debug\net8.0\LibreriaAPI_Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Infraestructura\obj\Debug\net8.0\LibreriaAPI_Infraestructura.sourcelink.json
 C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Infraestructura\obj\Debug\net8.0\LibreriaAPI_Infraestructura.dll
 C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Infraestructura\obj\Debug\net8.0\refint\LibreriaAPI_Infraestructura.dll
 C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaAPI_Infraestructura\obj\Debug\net8.0\LibreriaAPI_Infraestructura.pdb

@@ -1,20 +1,23 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using LibreriaAPI_Infraestructura.DataBase.Context;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibreriaMVC.Controllers
 {
     public class GenerosController : Controller
     {
-        // GET: GenerosController
-        public ActionResult Index()
+
+        private readonly ApplicationContext _applicationContext;
+
+        public GenerosController(ApplicationContext applicationContext)
         {
-            return View();
+            _applicationContext = applicationContext;
         }
 
-        // GET: GenerosController/Details/5
-        public ActionResult Details(int id)
+        // GET: GenerosController
+        public ActionResult GenerosView()
         {
-            return View();
+            var generos = _applicationContext.Generos.ToList();
+            return View(generos);
         }
 
         // GET: GenerosController/Create
@@ -23,40 +26,10 @@ namespace LibreriaMVC.Controllers
             return View();
         }
 
-        // POST: GenerosController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         // GET: GenerosController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
-        }
-
-        // POST: GenerosController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         // GET: GenerosController/Delete/5
@@ -65,19 +38,5 @@ namespace LibreriaMVC.Controllers
             return View();
         }
 
-        // POST: GenerosController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

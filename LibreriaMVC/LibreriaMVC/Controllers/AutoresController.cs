@@ -1,20 +1,22 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using LibreriaAPI_Infraestructura.DataBase.Context;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibreriaMVC.Controllers
 {
     public class AutoresController : Controller
     {
-        // GET: AutoresController
-        public ActionResult Index()
+        private readonly ApplicationContext _applicationContext;
+
+        public AutoresController(ApplicationContext applicationContext)
         {
-            return View();
+            _applicationContext = applicationContext;
         }
 
-        // GET: AutoresController/Details/5
-        public ActionResult Details(int id)
+        // GET: AutoresController
+        public ActionResult AutoresView()
         {
-            return View();
+            var autores = _applicationContext.Autores.ToList();
+            return View(autores);
         }
 
         // GET: AutoresController/Create
@@ -23,40 +25,10 @@ namespace LibreriaMVC.Controllers
             return View();
         }
 
-        // POST: AutoresController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         // GET: AutoresController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
-        }
-
-        // POST: AutoresController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         // GET: AutoresController/Delete/5
@@ -65,19 +37,5 @@ namespace LibreriaMVC.Controllers
             return View();
         }
 
-        // POST: AutoresController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
