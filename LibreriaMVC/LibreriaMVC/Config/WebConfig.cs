@@ -10,11 +10,11 @@ namespace LibreriaMVC.Config
     {
         public static void Register(IServiceCollection services, IConfiguration configuration)
         {
-            #region [Configuración Perfil AutoMapper]
-            var configMapper = new MapperConfiguration(cfg => cfg.AddProfile(new AutoMapper()));
-            var mapper = configMapper.CreateMapper();
-            services.AddSingleton(mapper);
-            #endregion
+            //#region [Configuración Perfil AutoMapper]
+            //var configMapper = new MapperConfiguration(cfg => cfg.AddProfile(new AutoMapper()));
+            //var mapper = configMapper.CreateMapper();
+            //services.AddSingleton(mapper);
+            //#endregion
 
             #region [Inicializar Conexion con Base de Datos]
             services.AddTransient<ApplicationContext, ApplicationContext>();

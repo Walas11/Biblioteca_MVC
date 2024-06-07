@@ -1,0 +1,85 @@
+﻿@using LibreriaAPI_Infraestructura.DataBase.Entities.Libros;
+@model IEnumerable<LibrosEntities>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Autores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Autores</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código del Libro</th>
+                    <th>Nombre del Libro</th>
+                    <th>Existencias</th>
+                    <th>Precio</th>
+                    <th>Código del Autor</th>
+                    <th>Código de la Editorial</th>
+                    <th>Id Genero</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var libros in Model)
+                {
+                    <tr>
+                        <td>@libros.Codigo_libro</td>
+                        <td>@libros.Nombre_libro</td>
+                        <td>@libros.Existencias</td>
+                        <td>@libros.Precio</td>
+                        <td>@libros.Codigo_autor</td>
+                        <td>@libros.Codigo_editorial</td>
+                        <td>@libros.Id_genero</td>
+                        <td>@libros.Descripcion</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

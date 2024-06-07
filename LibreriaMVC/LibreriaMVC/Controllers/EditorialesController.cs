@@ -1,20 +1,23 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using LibreriaAPI_Infraestructura.DataBase.Context;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibreriaMVC.Controllers
 {
     public class EditorialesController : Controller
     {
-        // GET: EditorialesController
-        public ActionResult Index()
+
+        private readonly ApplicationContext _applicationContext;
+
+        public EditorialesController(ApplicationContext applicationContext)
         {
-            return View();
+            _applicationContext = applicationContext;
         }
 
-        // GET: EditorialesController/Details/5
-        public ActionResult Details(int id)
+        // GET: EditorialesController
+        public ActionResult EditorialesView()
         {
-            return View();
+            var editoriales = _applicationContext.Editoriales.ToList();
+            return View(editoriales);
         }
 
         // GET: EditorialesController/Create
@@ -23,40 +26,10 @@ namespace LibreriaMVC.Controllers
             return View();
         }
 
-        // POST: EditorialesController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         // GET: EditorialesController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
-        }
-
-        // POST: EditorialesController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         // GET: EditorialesController/Delete/5
@@ -65,19 +38,5 @@ namespace LibreriaMVC.Controllers
             return View();
         }
 
-        // POST: EditorialesController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }

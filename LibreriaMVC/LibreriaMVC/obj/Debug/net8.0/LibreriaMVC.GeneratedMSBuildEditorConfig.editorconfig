@@ -26,16 +26,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Usuario\Documents\Desarrollo Web\Repositorio\Biblioteca_MVC\LibreriaMVC\LibreriaMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Autores/Autores.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xBdXRvcmVzLmNzaHRtbA==
+[C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Autores/AutoresCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xBdXRvcmVzQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Autores/AutoresEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xBdXRvcmVzRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Autores/AutoresView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3Jlc1xBdXRvcmVzVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Editoriales/EditorialesView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdG9yaWFsZXNcRWRpdG9yaWFsZXNWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Generos/GenerosView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZXJvc1xHZW5lcm9zVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Libros/LibrosView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXExpYnJvc1ZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Usuario/Documents/Desarrollo Web/Repositorio/Biblioteca_MVC/LibreriaMVC/LibreriaMVC/Views/Shared/Error.cshtml]

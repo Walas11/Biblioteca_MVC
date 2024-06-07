@@ -1,0 +1,78 @@
+﻿@using LibreriaAPI_Infraestructura.DataBase.Entities.Autores
+@model IEnumerable<AutoresEntities>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Autores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f8f8;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Autores</h1>
+
+        <a asp-action="AutoresCreate" class="btn btn-primary btn-lg">Nuevo Autor</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código del Autor</th>
+                    <th>Nombre del Autor</th>
+                    <th>Nacionalidad</th>
+                    <th> </th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var autor in Model)
+                {
+                    <tr>
+                        <td>@autor.Codigo_autor</td>
+                        <td>@autor.Nombre_autor</td>
+                        <td>@autor.Nacionalidad</td>
+                        <td> <a asp-action="AutoresEdit" asp-route-codigo="@autor.Codigo_autor">Editar</a> </td>
+                        <td> <a asp-action="AutoresDeleteView" asp-route-codigo="@autor.Codigo_autor">Eliminar</a> </td>
+                    </tr>
+                }
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

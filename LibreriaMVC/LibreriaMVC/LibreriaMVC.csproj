@@ -20,10 +20,4 @@
     <ProjectReference Include="..\LibreriaAPI_Infraestructura\LibreriaAPI_Infraestructura.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\Editoriales\" />
-    <Folder Include="Views\Generos\" />
-    <Folder Include="Views\Libros\" />
-  </ItemGroup>
-
 </Project>

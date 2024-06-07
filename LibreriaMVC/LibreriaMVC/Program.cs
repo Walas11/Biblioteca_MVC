@@ -1,3 +1,6 @@
+using LibreriaAPI_Infraestructura.DataBase.Context;
+using Microsoft.EntityFrameworkCore;
+
 namespace LibreriaMVC
 {
     public class Program
@@ -8,6 +11,13 @@ namespace LibreriaMVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // Add services to the container.
+
+            builder.Services.AddDbContext<ApplicationContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

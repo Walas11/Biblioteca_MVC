@@ -1,20 +1,22 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using LibreriaAPI_Infraestructura.DataBase.Context;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibreriaMVC.Controllers
 {
     public class LibrosController : Controller
     {
-        // GET: LibrosController
-        public ActionResult Index()
+        private readonly ApplicationContext _applicationContext;
+
+        public LibrosController(ApplicationContext applicationContext)
         {
-            return View();
+            _applicationContext = applicationContext;
         }
 
-        // GET: LibrosController/Details/5
-        public ActionResult Details(int id)
+        // GET: LibrosController
+        public ActionResult LibrosView()
         {
-            return View();
+            var libros = _applicationContext.Libros.ToList();
+            return View(libros);
         }
 
         // GET: LibrosController/Create
@@ -23,40 +25,10 @@ namespace LibreriaMVC.Controllers
             return View();
         }
 
-        // POST: LibrosController/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         // GET: LibrosController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
-        }
-
-        // POST: LibrosController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
 
         // GET: LibrosController/Delete/5
@@ -65,19 +37,5 @@ namespace LibreriaMVC.Controllers
             return View();
         }
 
-        // POST: LibrosController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
