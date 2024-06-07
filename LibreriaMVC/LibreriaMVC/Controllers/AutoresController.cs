@@ -74,21 +74,7 @@ namespace LibreriaMVC.Controllers
         // GET: AutoresController/Delete
         public ActionResult AutoresDelete(string codigo)
         {
-            if (ModelState.IsValid)
-            {
-                AutoresEntities autorEntities = new()
-                {
-                    Codigo_autor = autor.Codigo_autor,
-                    Nombre_autor = autor.Nombre_autor,
-                    Nacionalidad = autor.Nacionalidad
-                };
-
-                _applicationContext.Autores.Update(autorEntities);
-                _applicationContext.SaveChanges();
-
-                return RedirectToAction("AutoresView", "Autores");
-            }
-            return RedirectToAction("AutoresEditView", "Autores");
+            return View();
         }
 
     }
